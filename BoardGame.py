@@ -71,7 +71,9 @@ def main():
         health = movePlayer(gameData, health)
         print("Player1 health: " + str(health))
         displayGame(gameData)
-
+    else:
+        print("User input was invalid. Player1 did not move this turn.")
+        displayGame(gameData)
 
 if __name__ == "__main__":
     main()
