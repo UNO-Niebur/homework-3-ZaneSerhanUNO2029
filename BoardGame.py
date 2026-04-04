@@ -34,6 +34,8 @@ def movePlayer(data, health):
         if "Turn" in line:
             parts = line.split(": ")
             player = parts[1]
+            data.remove(line)
+            break
     move = random.randint(1, 24)
     print(player, "rolled:", move)
 
