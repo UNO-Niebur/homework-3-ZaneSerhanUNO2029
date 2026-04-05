@@ -1,6 +1,6 @@
 # Homework 3 - Board Game System
-# Name:
-# Date:
+# Name:Zane Serhan
+# Date: 4/4/2026
 import random
 def loadGameData(filename):
     """Reads game data from a file and returns it as a list."""
@@ -20,12 +20,12 @@ def displayGame(data):
 def updateHealth(health, event):
     if event == "Heal":
         health += 20
-        print("You landed on Heal! Gain 20 health!")
+        print("Player1 landed on Heal! Gain 20 health!")
     elif event == "Trap":
         health -= 20
-        print("You landed on Trap! Lose 20 health!")
+        print("Player1 landed on Trap! Lose 20 health!")
     elif event == "Treasure":
-        print("You landed on Treasure! You have good luck!")
+        print("Player1 landed on Treasure! You have good luck!")
     return health
 
 def movePlayer(data, health):
